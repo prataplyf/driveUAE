@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block contents %}  <!--Body Id-->
+        <form action = "{{ url_for('cardetails') }}" method="POST" class="formstyle">
+            <fieldset id="borderfield">
+            <div  id="borderfrom">
+               <table>
+                  <tr><td>Car Name</td></tr>
+                  <tr><td> <input type ="text" name = "brandname"  placeholder="Brand Name"/></td></tr>
+                  <div id="bordersubmit">
+                     <tr><td><span style="text-align:center;"> <input type = "submit" value = "Show Details" /> </span></td></tr>
+                  </div>
+            </table>
+            </div>
+            <!-- <div>
+               {% if message %}
+                  <div style="text-align:center;">
+                     <span style="font-size:12px; font-weight:bold">
+                        {{ message }}
+                     </span>
+                  </div>
+               {% endif %}
+            </div> -->
+            </fieldset>
+      </form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block contents %}
+    <form class="main_form" method = "POST">
+        <div class=''>
+            <p><font color='#aaa000'> {{ '-'*20 }} DRIVE UAE </font></p>
+            <p>Click here for Car Upload <a href="{{ url_for('carupload') }}">Upload</a>.</p>
+            <p>Click here for Car <a href="{{ url_for('cardetails') }}">Details</a>.</p>
+            <p>Click here for Car <a href="{{ url_for('carbrands') }}">Details</a>.</p>
+    </form>
+{% endblock contents %}

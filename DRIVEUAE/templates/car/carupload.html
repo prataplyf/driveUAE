@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+{% block contents %}  <!--Body Id-->
+        <form action = "{{ url_for('carupload') }}" method="POST" class="formstyle">
+            <fieldset id="borderfield">
+            <div  id="borderfrom">
+               <table>carbrand
+               <tr><td>Brand Name</td></tr>
+                  <tr><td> <input type ="text" name = "carbrand"  placeholder="Audi / BMW / LAMBORGHINI"/></td></tr>
+                  <tr><td>Car Name</td></tr>
+                  <tr><td> <input type ="text" name = "carname"  placeholder="Car Name"/></td></tr>
+                  <tr><td>Car Quantity</td></tr>
+                  <tr><td> <input type ="text" name = "qty"  placeholder="Car Quantity"/></td></tr>
+                  <tr><td>Car Image</td></tr>
+                  <tr><td> <input type ="text" name = "carimage" placeholder="Image url"/></td></tr>
+                  <tr><td>Details</td></tr>
+                  <tr><td> <input type ="text" name = "carFullDetail" placeholder="Car Details"/></td></tr>
+                  <tr><td>Car Type</td></tr>
+                  <tr><td> <input type ="text" name = "carType" placeholder="Car Type eg: sedan/SUV"/></td></tr>
+                  <tr><td>Passengers</td></tr>
+                  <tr><td> <input type ="text" name = "passangers" placeholder="Number of Passengers"/></td></tr>
+                  <tr><td>Luggages</td></tr>
+                  <tr><td> <input type ="text" name = "luggages" placeholder="Number of Luggages "/></td></tr>
+                  <tr><td>Transmission</td></tr>
+                  <tr><td> <input type ="text" name = "transmission" placeholder=""/></td></tr>
+                  <tr><td>Fuel Type</td></tr>
+                  <tr><td> <input type ="text" name = "fuel" placeholder=""/></td></tr>
+                  <tr><td>Cylinder</td></tr>
+                  <tr><td> <input type ="text" name = "cylinder" placeholder=""/></td></tr>
+                  <tr><td>EngineVolume</td></tr>
+                  <tr><td> <input type ="text" name = "engineVolume" placeholder=""/></td></tr>
+                  <tr><td>Horsepower</td></tr>
+                  <tr><td> <input type ="text" name = "horsepower" placeholder=""/></td></tr>
+                  <tr><td>Torque</td></tr>
+                  <tr><td> <input type ="text" name = "torque" placeholder=""/></td></tr>
+                  <tr><td>fuelEcoCity</td></tr>
+                  <tr><td> <input type ="text" name = "fuelEcoCity" placeholder=""/></td></tr>
+                  <tr><td>fuelEcoHighway</td></tr>
+                  <tr><td> <input type ="text" name = "fuelEcoHighway" placeholder=""/></td></tr>
+                  <tr><td>fuelEcoCombined</td></tr>
+                  <tr><td> <input type ="text" name = "fuelEcoCombined" placeholder=""/></td></tr>
+                  <tr><td>fuelTank</td></tr>
+                  <tr><td> <input type ="text" name = "fuelTank" placeholder=""/></td></tr>
+                  <tr><td>emissionsClass</td></tr>
+                  <tr><td> <input type ="text" name = "emissionsClass" placeholder=""/></td></tr>
+                  <tr><td>displacement</td></tr>
+                  <tr><td> <input type ="text" name = "displacement" placeholder=""/></td></tr>
+                  <tr><td>rent1Day</td></tr>
+                  <tr><td> <input type ="text" name = "rent1" placeholder=""/></td></tr>
+                  <tr><td>rent2+days</td></tr>
+                  <tr><td> <input type ="text" name = "rent2" placeholder=""/></td></tr>
+                  <tr><td>rent4+days</td></tr>
+                  <tr><td> <input type ="text" name = "rent4" placeholder=""/></td></tr>
+                  <tr><td>rent7+days</td></tr>
+                  <tr><td> <input type ="text" name = "rent7" placeholder=""/></td></tr>
+                  
+                  <div id="bordersubmit">
+                     <tr><td><span style="text-align:center;"> <input type = "submit" value = "Upload" /> </span></td></tr>
+                  </div>
+            </table>
+            </div>
+            <!-- <div>
+               {% if message %}
+                  <div style="text-align:center;">
+                     <span style="font-size:12px; font-weight:bold">
+                        {{ message }}
+                     </span>
+                  </div>
+               {% endif %}
+            </div> -->
+            </fieldset>
+      </form>
+{% endblock %}
